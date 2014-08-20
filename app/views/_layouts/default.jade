@@ -2,13 +2,30 @@ include elements/gallery
 include elements/forms
 include elements/slider
 include elements/nav
+
 doctype html
 html(lang="en")
+  
   include includes/head
-  body
+  
+  body.loged-in
+    header
+      h1
+        a(href="index.html") Mundo cooperativo
+      .profile Hola
+        strong Daniel Pérez
+        | ,
+        a(href="index.html") Salir 
+
+      nav
+        a(href="index.html") Mundo Cooperativo
+        | |
+        a(href="profile.html") Mi cooperativa
+        | |
+        a(href="#") Imagen institucional
+        | |
+        a(href="#") Aprender
     
-    #page
-      .wrapper
-        block nav
-      block content
-      include includes/foot
+    block content
+    
+    include includes/foot

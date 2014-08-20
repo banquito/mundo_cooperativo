@@ -1,0 +1,24 @@
+extends _layouts/home
+
+block content
+  section#registro
+    .content
+      .help
+        h2 Registro de usurario
+        p Este es tu primer paso para fundar una 
+          | cooperativa de trabajo.
+          | Sería bueno contar algo más en esta
+          | instancia. desde que va a pasar despues, 
+          | hasta algo relacionado a la importancia 
+          | de hacerlo de forma grupal.
+
+      form(action="profile.html")
+        p
+          +formInput('text', 'nombre', 'Nombre de usuario')
+        p
+          +formInput('email', 'email', 'Correo electrónico')
+        p
+          +formInput('password', 'pass', 'Contraseña')
+        p
+          +formInput('password', 'repeat-pass', 'Repetir contraseña')
+        button(type=submit) Ingresar

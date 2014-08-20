@@ -69,24 +69,15 @@ module.exports = function(grunt) {
   watch: {
     css: {
       files: ['app/assets/stylus/*.styl', 'app/assets/stylus/**/*.styl'],
-      tasks: ['stylus'],
-      options: {
-        debounceDelay: 250
-      }
+      tasks: ['stylus']
     },
     views: {
       files: ['app/views/*.jade', 'app/views/**/*.jade', 'app/models/**/*.json', 'app/models/*.json'],
-      tasks: ['jade'],
-      options: {
-        debounceDelay: 250
-      }
+      tasks: ['jade']
     },
     js: {
       files: ['app/assets/js/*.js', 'app/assets/js/**/*.js'],
-      tasks: ['uglify'],
-      options: {
-        debounceDelay: 250
-      }
+      tasks: ['uglify']
     }
   },
 

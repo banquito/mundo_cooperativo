@@ -2,12 +2,21 @@ include elements/gallery
 include elements/forms
 include elements/slider
 include elements/nav
+
 doctype html
 html(lang="en")
-  include includes/head_snippets
-  body
+  
+  include includes/head
+  
+  body.not-login.home
     header
+      h1
+        a(href="index.html") Mundo cooperativo
       nav
-        +nav('nav-site', global.nav)
+        a(href="profile.html") Iniciá sesión
+        | |
+        a(href="registrate.html") Registráte
+    
     block content
-    //include includes/foot_snippets
+    
+    include includes/foot

@@ -1,58 +1,79 @@
-section#home
-  color #fff
-  transition all 500ms ease-in 500ms
-  border-box()
-  padding 5% 5% 0 0
-  
-  h1
-    color $kuler4
-    margin 0% 0 3%
-    font-size 6.5rem
-    margin-bottom 0
-  
-  h1, 
-  h2, 
-  h3, 
-  h4, 
-  h5, 
-  h6
-    //opacity 0.4
-    position relative
-    left 10%
-    width 80%
-  
-  p
-    //opacity 0.1
-    position relative
-    left 10%
-    width 80%
-    color $textColor
-  
-  h1
-    transition (all 200ms ease-in-out)
-  
-  h2
-    transition (all 100ms ease-in-out 200ms)
-    color $kuler1
-    margin-top 0
-  
-  h3
-    transition (all 100ms ease-in-out 350ms)
-    color $kuler2
-    font-size 4.5rem
-  
-  p
-    transition (all 100ms ease-in-out 500ms)
-    width:600px
-  
-  &:hover
-    h1, h2, h3, h4, h5, h6, p
-      //opacity 1
-      //left 6%
+.home
+  section
+    &#home-top
+      background: $colorInstitucional;
+      text-align: center;
 
+      h2 
+        background: url(../svg/logo.svg) no-repeat;
+        size: 215px 251px;
+        margin: 0 auto 30px;
+        hide-text();
+      h3
+        color: #fff;
+        font-size: 28px;
+        margin: 0;
+      p
+        color: #fff;
+        font-size: 18px;
+        margin-bottom: 30px;
+      a.btn
+        font-size: 20px;
+        button(#fff, $colorInstitucional);
+        mixIcon($icon-arrow-right-outline);
+        padding: 10px 25px;
 
-  .ico-doc
-    mixIcon($icon-file-text-alt)
+    &#home-empezar
+      text-align: center;
+      h3 
+        font-size: 45px;
+        color: $colorInstitucional;
+        margin: 0
+      h4
+        font-size: 26px;
+        
+    &#home-experiencia
+      background: $colorInstitucional;
+      h3
+        text-align: center;
+        color: #fff;
+        font-size: 32px;
 
-  .ico-url
-    mixIcon($icon-globe)
+      .video
+        column(1/2);
+        +below(2)
+          column(1);
+        iframe
+          width: 100%;
+      p
+
+        column(1/2);
+        +below(2)
+          column(1);
+        color: #fff;
+        font-size: 16px;
+
+    &#home-registrate
+      padding: 100px 0;
+      text-align: center;
+      a.btn
+        button($colorInstitucional);
+        mixIcon($icon-arrow-right-outline);
+        +below(2)
+          float: none;
+          margin-bottom: 30px;
+
+        float: right;
+        font-size: 24px;
+        padding: 25px 60px;
+
+      h3
+        margin: 0 300px 0 0;
+        color: $colorInstitucional;
+        +below(2)
+          margin-right: 0;
+      p
+        font-size: 16px;
+        margin: 0 300px 0 0;
+        +below(2)
+          margin-right: 0;

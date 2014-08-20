@@ -1,0 +1,63 @@
+.box
+  column(1/3, cycle: 3);
+  min-height: 100px;
+  text-align: left;
+  padding-left: 90px;
+  box-sizing: border-box;
+  position: relative;
+  +below(2)
+    float: none;
+    width: auto;
+
+  &:before
+    display: block;
+    position: absolute;
+    left: 0;
+    border-radius: 40px;
+    size: 80px;
+    text-align: center;
+    line-height: 80px;
+
+  h5 
+    font-size: 26px;
+    margin: 0;
+  p
+    font-size: 16px;
+    color: $textColor;
+    
+  &.box-miembros
+    h5
+      color: $colorMiembros;
+    &:before
+      mixIconSrc($icon-users, #fff, 50px);
+      background: $colorMiembros;
+  &.box-objetivo
+    h5
+      color: $colorObjetivo;
+    &:before
+      mixIconSrc($icon-cogs, #fff, 50px);
+      background: $colorObjetivo;
+  &.box-lugar
+    h5
+      color: $colorLugar;
+    &:before
+      mixIconSrc($icon-location, #fff, 50px);
+      background: $colorLugar;
+  &.box-nombre
+    h5
+      color: $colorNombre;
+    &:before
+      mixIconSrc($icon-heart, #fff, 50px);
+      background: $colorNombre;
+  &.box-formacion
+    h5
+      color: $colorFormacion;
+    &:before
+      mixIconSrc($icon-quill, #fff, 50px);
+      background: $colorFormacion;
+  &.box-capital
+    h5
+      color: $colorCapital;
+    &:before
+      mixIconSrc($icon-stats, #fff, 50px);
+      background: $colorCapital;

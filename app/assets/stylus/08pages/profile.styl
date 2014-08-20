@@ -1,0 +1,42 @@
+#profile
+  .content
+    margin-bottom: 50px;
+    cf();
+  .help
+    h2 
+      color: $colorInstitucional;
+      font-size: 36px;
+      margin-bottom: 10px;
+      text-align: right;
+    p
+      font-size: 18px;
+      text-align: right;
+    +above(2)
+      column(1/2);
+    +below(2)
+      column(1);
+
+  .karma
+    h3
+      color: $colorInstitucional;
+      font-size: 20px;
+      margin-bottom: 0;
+      line-height: 55px;
+    p
+      font-size: 12px;
+    .gotas
+      .gota
+        display: inline;
+        mixIcon($icon-droplet2, $colorInactivo, 30px);
+        &:before
+          margin-right: 0;
+        &.active:before
+          color: $colorGota;
+    +above(2)
+      column(1/2);
+      box-sizing: border-box;
+      padding-left: 20px;
+      border-left: 5px solid $colorInstitucional;
+
+    +below(2)
+      column(1);
