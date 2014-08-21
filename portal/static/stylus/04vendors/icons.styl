@@ -1,0 +1,87 @@
+@font-face {
+  font-face("icomoon", "../fonts/icomoon.");
+}
+
+mixIconSrc($icon = '\e603', $color = inherit, $size = inherit) {
+		content: $icon;
+		color: $color;
+		font-size: $size;
+		font-family: icomoon;
+		font-weight: normal;
+		font-style: normal;
+		text-decoration: inherit;
+		-webkit-font-smoothing: antialiased;
+}
+
+mixIcon($icon = '\e603', $color = inherit, $size = inherit) {
+	&:before {
+		mixIconSrc($icon, $color, $size);
+		margin-right:0.5em;
+	}
+}
+
+mixIconAfter($icon = '\e603', $color = inherit, $size = inherit) {
+	&:after {
+		mixIconSrc($icon, $color, $size);
+		margin-left:0.5em;
+	}
+}
+
+.mixIconSpinSrc {
+	animation(spin 2s infinite linear);
+	display: inline-block;
+  text-decoration: none;
+  padding:0;
+  text-indent:0;
+}
+
+mixIconSpin() {
+	&:before {
+		mixIconSpinSrc();
+	}
+}
+
+mixIconSpinAfter() {
+	&:after {
+		mixIconSpinSrc();
+	}
+}
+
+@keyframes spin 
+  0%
+    transform rotate(0deg)
+  100%
+    transform rotate(359deg)
+
+
+$icon-times = "\e603";
+$icon-tick = "\e604";
+$icon-plus = "\e605";
+$icon-minus = "\e606";
+$icon-arrow-right-thick = "\e607";
+$icon-arrow-left-thick = "\e608";
+$icon-th-menu = "\e609";
+$icon-heart = "\e60a";
+$icon-download = "\e60c";
+$icon-calender = "\e60d";
+$icon-world = "\e60e";
+$icon-arrow-sync = "\e60f";
+$icon-arrow-right-outline = "\e610";
+$icon-arrow-left-outline = "\e611";
+$icon-quill = "\e612";
+$icon-pen = "\e613";
+$icon-bullhorn = "\e615";
+$icon-location = "\e616";
+$icon-user = "\e618";
+$icon-users = "\e619";
+$icon-cogs = "\e61a";
+$icon-stats = "\e61b";
+$icon-mail = "\e61c";
+$icon-googleplus = "\e61d";
+$icon-facebook = "\e61e";
+$icon-twitter = "\e61f";
+$icon-feed = "\e620";
+$icon-vimeo = "\e621";
+$icon-flickr = "\e622";
+$icon-file-pdf = "\e623";
+$icon-droplet2 = "\e602";
