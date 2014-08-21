@@ -7,20 +7,26 @@
   
   min-height: 100px
   position: relative
+  margin: 30px auto
   
   h5,
   p
     text-align: left
     padding-left: 90px
-  
+  a
+    display: block
+    position: relative
+    z-index: 2
+
   &:before
     display: block
     position: absolute
     left: 0
-    border-radius: 40px
+    border-radius: 60px
     size: 80px
     text-align: center
     line-height: 80px
+    background: $colorInactivo
 
   h5 
     font-size: 26px
@@ -34,34 +40,104 @@
       color: $colorMiembros
     &:before
       mixIconSrc($icon-users, #fff, 50px)
+    &.active:before,
+    &:hover:before
       background: $colorMiembros
   &.box-objetivo
     h5
       color: $colorObjetivo
     &:before
       mixIconSrc($icon-cogs, #fff, 50px)
+    &.active:before,
+    &:hover:before
       background: $colorObjetivo
   &.box-lugar
     h5
       color: $colorLugar
     &:before
       mixIconSrc($icon-location, #fff, 50px)
+    &.active:before,
+    &:hover:before
       background: $colorLugar
   &.box-nombre
     h5
       color: $colorNombre
     &:before
       mixIconSrc($icon-heart, #fff, 50px)
+    &.active:before,
+    &:hover:before
       background: $colorNombre
   &.box-formacion
     h5
       color: $colorFormacion
     &:before
       mixIconSrc($icon-quill, #fff, 50px)
+    &.active:before,
+    &:hover:before
       background: $colorFormacion
   &.box-capital
     h5
       color: $colorCapital
     &:before
       mixIconSrc($icon-stats, #fff, 50px)
+    &.active:before,
+    &:hover:before
       background: $colorCapital
+
+.boxes-inaes
+  margin: 30px auto
+  clear: both
+  display: table
+  h5
+    color: $colorTramite
+  .box
+    float: none
+    width: auto
+    color: $colorTramite
+    &:before
+      top: -5px
+    &.active:before,
+    &:hover:before
+      background: $colorTramite
+    &.box-convocatoria
+      &:before
+        mixIconSrc($icon-calender, #fff, 50px)
+        +above(3)
+          size: 110px
+          left: -25px
+          top: -10px
+          font-size: 80px
+          line-height: 110px
+    &.box-asamblea
+      &:before
+        mixIconSrc($icon-bullhorn, #fff, 50px)
+    &.box-acta-consejo
+      &:before
+        mixIconSrc($icon-pen, #fff, 50px)
+    &.box-tramite
+      &:before
+        mixIconSrc($icon-newspaper, #fff, 50px)
+        +above(3)
+          size: 110px
+          left: -25px
+          top: -10px
+          font-size: 80px
+          line-height: 110px
+#profile
+  .help
+    .box
+      padding-top: 100px
+      margin: 0
+      &:before
+        left: auto
+        right: 0
+        top: 0;
+      float: none
+      width: auto
+      h5
+        text-align: right
+      h6
+        font-size: 18px
+        text-align: right
+      p
+        font-size: 14px

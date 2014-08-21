@@ -31,47 +31,63 @@
       s.parentNode.insertBefore(g,s)}(document,'script'));
     </script>
   </head>
-  <body class="not-login home">
-    <header>
-      <h1><a href="index.html">Mundo cooperativo</a></h1>
-      <nav><a href="profile.html">Iniciá sesión</a>|<a href="registrate.html">Registráte</a></nav>
-    </header>
-    <section id="registro">
-      <div class="content">
-        <div class="help">
-          <h2>Registro de usurario</h2>
-          <p>
-            Este es tu primer paso para fundar una 
-            cooperativa de trabajo.
-            Sería bueno contar algo más en esta
-            instancia. desde que va a pasar despues, 
-            hasta algo relacionado a la importancia 
-            de hacerlo de forma grupal.
-          </p>
+  <body id="sidemenu" class="not-login home">
+    <div class="sidemenu"><a href="#sidemenu"></a><a href="#sidemenuclose"></a>
+      <nav>
+        <aside class="user-box">
+          <h4>Daniel</h4>
+          <p>Administrador | <a href="index.html">Salir</a></p>
+        </aside>
+        <ul>
+          <li><a href="index.html">Mundo Cooperativo</a></li>
+          <li><a href="profile.html">Mi cooperativa</a></li>
+          <li><a href="#">Imagen institucional</a></li>
+          <li><a href="#">Aprender</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="page">
+      <header>
+        <h1><a href="index.html">Mundo cooperativo</a></h1>
+        <div class="profile"><a href="profile.html">Iniciá sesión</a>|<a href="registrate.html">Registráte</a></div>
+      </header>
+      <section id="registro">
+        <div class="content">
+          <div class="help">
+            <h2>Registro de usurario</h2>
+            <p>
+              Este es tu primer paso para fundar una 
+              cooperativa de trabajo.
+              Sería bueno contar algo más en esta
+              instancia. desde que va a pasar despues, 
+              hasta algo relacionado a la importancia 
+              de hacerlo de forma grupal.
+            </p>
+          </div>
+          <form action="profile.html">
+            <p>
+              <label for="nombre">Nombre de usuario</label>
+              <input type="text" id="nombre" name="nombre"/>
+            </p>
+            <p>
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email"/>
+            </p>
+            <p>
+              <label for="pass">Contraseña</label>
+              <input type="password" id="pass" name="pass"/>
+            </p>
+            <p>
+              <label for="repeat-pass">Repetir contraseña</label>
+              <input type="password" id="repeat-pass" name="repeat-pass"/>
+            </p>
+            <button>Ingresar</button>
+          </form>
         </div>
-        <form action="profile.html">
-          <p>
-            <label for="nombre">Nombre de usuario</label>
-            <input type="text" id="nombre" name="nombre"/>
-          </p>
-          <p>
-            <label for="email">Correo electrónico</label>
-            <input type="email" id="email" name="email"/>
-          </p>
-          <p>
-            <label for="pass">Contraseña</label>
-            <input type="password" id="pass" name="pass"/>
-          </p>
-          <p>
-            <label for="repeat-pass">Repetir contraseña</label>
-            <input type="password" id="repeat-pass" name="repeat-pass"/>
-          </p>
-          <button>Ingresar</button>
-        </form>
-      </div>
-    </section>
-    <footer>
-      <h6>Las emrpesas cooperativas ayudan a construir un mundo mejor</h6>
-    </footer>
+      </section>
+      <footer>
+        <h6>Las emrpesas cooperativas ayudan a construir un mundo mejor</h6>
+      </footer>
+    </div>
   </body>
 </html>

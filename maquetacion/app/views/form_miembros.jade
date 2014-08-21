@@ -1,0 +1,60 @@
+extends _layouts/default
+
+block content
+  section#profile
+    .content
+      .help
+        h2 Mi cooperativa
+        :markdown
+          Para completar la documentación 
+          solicitada por el **Inaes** debes
+          completar los siguientes módulos.
+
+      .karma
+        h3 Estado del trámite de inscripción
+        :markdown
+          El árbol del cooperativismo necesita ser regado.
+          Para lograr tener la matriculo de tu cooperativa, será necesario 
+          que completes todos los pasos para una inscripción exitosa.
+
+        .gotas
+          .gota.active
+          .gota.active
+          .gota.active
+          .gota
+          .gota
+          .gota
+          .gota
+          .gota
+          .gota
+          .gota
+    
+    section#registro
+      .content
+        .help
+          .box.box-miembros.active
+            h5 +6
+            h6 Para armar una cooperativa, se necestan al menos, 6 socios.
+            :markdown
+              Las cooperativas de trabajo necestan 
+              un mínimo de 6 miembros. 
+              Esto es porque es necesario cubrir 
+              los cargos del consejo de administración
+              y el de sindico.
+              En una cooperativa de 6 miembros, 
+              los cargos a distribuir serían:
+              Presidente, secretario, tesorero, 
+              sindico, sindico suplente y socio.
+
+              [Más información](http://www.inaes.com.ar) 
+
+        form(action="profile.html")
+          p
+            +formInput('text', 'nombre', 'Nombre de usuario')
+          p
+            +formInput('email', 'email', 'Correo electrónico')
+          p
+            +formInput('password', 'pass', 'Contraseña')
+          p
+            +formInput('password', 'repeat-pass', 'Repetir contraseña')
+          button(type=submit) Ingresar

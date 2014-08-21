@@ -34,27 +34,30 @@ sidenav($color = #5c5c5c, $textColor = #fff) {
     left:244px; 
     width:100%; 
   }
-  [href*="#sidemenu"], 
-  [href*="#sidemenu"]:focus { 
+  [href^="#sidemenu"], 
+  [href^="#sidemenu"]:focus { 
     outline:none; 
-    background: lighten($color, 20%);
+    background: $colorInstitucionalAlt;
     color:#fff;
-    border-radius: 0 5px 5px 0;
-    size(40px, 40px);
+    size: 48px;
     position:absolute;
-    top:10px;
+    top:0;
     left:244px;
     line-height:40px;
     text-align:center;
     z-index: 1000;
+    font-family: icomoon
+    font-size: 30px
+    line-height: 48px
     &:before {
-      mixIconSrc($icon-arrow-right, $textColor, 20px);
+      mixIconSrc($icon-th-menu, $textColor, 20px);
       margin:0;
     }
   }
   [href*="#sidemenu"]:hover {
     text-decoration:none;
-    background: lighten($color, 15%);
+    color: #fff;
+    background: lighten($colorInstitucionalAlt, 5%);
   }
   [href="#sidemenu"] {
     display:block; 
@@ -63,10 +66,18 @@ sidenav($color = #5c5c5c, $textColor = #fff) {
   [href="#sidemenuclose"] { 
     display:none; 
   }
+  body [href="#sidemenu"]
   body:target [href="#sidemenuclose"] { 
     display:inline-block; 
     &:before {
-      content: $icon-arrow-left;
+      content: $icon-th-menu;
     }
   }
 }
+.sidemenu
+  display: none
+
++below(4)
+  .sidemenu
+    display: block
+  sidenav()

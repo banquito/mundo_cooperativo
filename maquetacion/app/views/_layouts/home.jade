@@ -8,15 +8,18 @@ html(lang="en")
   
   include includes/head
   
-  body.not-login.home
-    header
-      h1
-        a(href="index.html") Mundo cooperativo
-      nav
-        a(href="profile.html") Iniciá sesión
-        | |
-        a(href="registrate.html") Registráte
+  body.not-login.home#sidemenu
+    include includes/sidemenu
     
-    block content
-    
-    include includes/foot
+    #page
+      header
+        h1
+          a(href="index.html") Mundo cooperativo
+        .profile
+          a(href="profile.html") Iniciá sesión
+          | |
+          a(href="registrate.html") Registráte
+      
+      block content
+      
+      include includes/foot
