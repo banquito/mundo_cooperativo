@@ -1,0 +1,79 @@
+.home
+  section
+    &#home-top
+      background: $colorInstitucional
+      text-align: center
+
+      h2 
+        background: url(../svg/logo.svg) no-repeat
+        size: 215px 251px
+        margin: 0 auto 30px
+        hide-text()
+      h3
+        color: #fff
+        font-size: 28px
+        margin: 0
+      p
+        color: #fff
+        font-size: 18px
+        margin-bottom: 30px
+      a.btn
+        font-size: 20px
+        button(#fff, $colorInstitucional)
+        mixIcon($icon-arrow-right-outline)
+        padding: 10px 25px
+
+    &#home-empezar
+      text-align: center
+      h3 
+        font-size: 45px
+        color: $colorInstitucional
+        margin: 0
+      h4
+        font-size: 26px
+        
+    &#home-experiencia
+      background: $colorInstitucional
+      h3
+        text-align: center
+        color: #fff
+        font-size: 32px
+
+      .video
+        column(1/2)
+        +below(2)
+          column(1)
+        iframe
+          width: 100%
+      p
+
+        column(1/2)
+        +below(2)
+          column(1)
+        color: #fff
+        font-size: 16px
+
+    &#home-registrate
+      padding: 100px 0
+      text-align: center
+      a.btn
+        button($colorInstitucional)
+        mixIcon($icon-arrow-right-outline)
+        +below(2)
+          float: none
+          margin-bottom: 30px
+
+        float: right
+        font-size: 24px
+        padding: 25px 60px
+
+      h3
+        margin: 0 300px 0 0
+        color: $colorInstitucional
+        +below(2)
+          margin-right: 0
+      p
+        font-size: 16px
+        margin: 0 300px 0 0
+        +below(2)
+          margin-right: 0
