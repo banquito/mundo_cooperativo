@@ -8,24 +8,27 @@ html(lang="en")
   
   include includes/head
   
-  body.loged-in
-    header
-      h1
-        a(href="index.html") Mundo cooperativo
-      .profile Hola
-        strong Daniel Pérez
-        | ,
-        a(href="index.html") Salir 
+  body.loged-in#sidemenu
+    include includes/sidemenu
+    #page
+      header
+        h1
+          a(href="index.html") Mundo cooperativo
+        .profile Hola
+          |   
+          strong Daniel Pérez 
+          | ,
+          a(href="index.html") Salir 
 
-      nav
-        a(href="index.html") Mundo Cooperativo
-        | |
-        a(href="profile.html") Mi cooperativa
-        | |
-        a(href="#") Imagen institucional
-        | |
-        a(href="#") Aprender
-    
-    block content
-    
-    include includes/foot
+        nav
+          a(href="index.html") Mundo Cooperativo
+          | |
+          a(href="profile.html") Mi cooperativa
+          | |
+          a(href="#") Imagen institucional
+          | |
+          a(href="#") Aprender
+      
+      block content
+      
+      include includes/foot

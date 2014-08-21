@@ -1,4 +1,4 @@
-extends _layouts/home
+extends _layouts/default
 
 block content
   section#profile
@@ -29,21 +29,46 @@ block content
           .gota
           .gota
     .content
-      .box.box-miembros
-        h5 +6
-        p Para armar una cooperativa, se necestan al menos, 6 socios.
-      .box.box-objetivo
-        h5 Objetivo
-        p Estar de acuerdo en que tarea van a realizar.
-      .box.box-lugar
-        h5 Lugar
-        p Tener una sede donde funcionar.
-      .box.box-nombre
-        h5 Nombre
-        p Para armar una cooperativa, se necestan al menos, 6 socios.
-      .box.box-formacion
-        h5 Formación
-        p Estar de acuerdo en que tarea van a realizar.
-      .box.box-capital
-        h5 Capital social
-        p Tener una sede donde funcionar.
+      .boxes
+        .box.box-miembros
+          a(href="form_miembros.html")
+            h5 +6
+            p Para armar una cooperativa, se necestan al menos, 6 socios.
+        .box.box-objetivo
+          a(href="#")
+            h5 Objetivo
+            p Estar de acuerdo en que tarea van a realizar.
+        .box.box-lugar
+          a(href="#")
+            h5 Lugar
+            p Tener una sede donde funcionar.
+        .box.box-nombre
+          a(href="#")
+            h5 Nombre
+            p Para armar una cooperativa, se necestan al menos, 6 socios.
+        .box.box-formacion
+          a(href="#")
+            h5 Formación
+            p Estar de acuerdo en que tarea van a realizar.
+        .box.box-capital
+          a(href="#")
+            h5 Capital social
+            p Tener una sede donde funcionar.
+
+      .boxes-inaes
+        .box.box-convocatoria
+          a(href="#")
+            h5 Convocatoria  a Asamblea
+            p Genera la documantación necesaria para presentar ante el Inaes
+        .box.box-asamblea
+          a(href="#")
+            h5 Asamblea constitutiva
+            p Se crea el estatuto de la cooperativa
+        .box.box-acta-consejo
+          a(href="#")
+            h5 Primer acta del consejo
+            p Se repartin los cargos del consejo de administración
+        .box.box-tramite
+          a(href="#")
+            h5 Estado del tramite ante el Inaes
+            p Información sobre la situación legal de la cooperativa
