@@ -25,14 +25,23 @@ sidenav($color = #5c5c5c, $textColor = #fff) {
     left:0px;
   }
   body #page {
-      position:relative; 
-      left:0;
+    position:relative; 
+    left:0;
     transition (left 500ms ease-in-out);
   }
-  body:target #page{ 
+  body:target #page { 
     position:relative; 
     left:244px; 
     width:100%; 
+  }
+  body:target header { 
+    left:244px; 
+    width:100%; 
+  }
+  body header { 
+    left:0; 
+    width:100%; 
+    transition (left 500ms ease-in-out);
   }
   [href^="#sidemenu"], 
   [href^="#sidemenu"]:focus { 

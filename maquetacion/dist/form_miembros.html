@@ -82,7 +82,7 @@ que completes todos los pasos para una inscripción exitosa.</p>
             </div>
           </div>
         </div>
-        <section id="registro">
+        <section id="form_miembros">
           <div class="content">
             <div class="help">
               <div class="box box-miembros active">
@@ -100,25 +100,81 @@ sindico, sindico suplente y socio.</p>
 
               </div>
             </div>
-            <form action="profile.html">
-              <p>
-                <label for="nombre">Nombre de usuario</label>
-                <input type="text" id="nombre" name="nombre"/>
-              </p>
-              <p>
-                <label for="email">Correo electrónico</label>
-                <input type="email" id="email" name="email"/>
-              </p>
-              <p>
-                <label for="pass">Contraseña</label>
-                <input type="password" id="pass" name="pass"/>
-              </p>
-              <p>
-                <label for="repeat-pass">Repetir contraseña</label>
-                <input type="password" id="repeat-pass" name="repeat-pass"/>
-              </p>
-              <button>Ingresar</button>
-            </form>
+            <div class="panel">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Socio</th>
+                    <th>Correo</th>
+                    <th>Estado</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Ariel Federico Asus</td>
+                    <td>daniel@gmail.com</td>
+                    <td>30%</td>
+                    <td><a href="#editar"></a></td>
+                  </tr>
+                  <tr>
+                    <td>Ariel Ramirez</td>
+                    <td>correo_un_poco_largo@gmail.com</td>
+                    <td>60%</td>
+                    <td><a href="#editar"></a></td>
+                  </tr>
+                  <tr>
+                    <td>Jorge Ibañez</td>
+                    <td>jorge_ibanez@gmail.com</td>
+                    <td>100%</td>
+                    <td><a href="#editar"></a></td>
+                  </tr>
+                </tbody>
+              </table>
+              <form action="profile.html">
+                <h3>Nuevo socio</h3>
+                <p>
+                  <label for="nombre">Nombre de usuario</label>
+                  <input type="text" id="nombre" name="nombre"/>
+                </p>
+                <p>
+                  <label for="email">Correo electrónico</label>
+                  <input type="email" id="email" name="email"/>
+                </p>
+                <p>
+                  <label for="pass">Contraseña</label>
+                  <input type="password" id="pass" name="pass"/>
+                </p>
+                <p>
+                  <label for="repeat-pass">Repetir contraseña</label>
+                  <input type="password" id="repeat-pass" name="repeat-pass"/>
+                </p>
+                <p>
+                  <label for="nombre">Nombre</label>
+                  <input type="text" id="nombre" name="nombre"/>
+                </p>
+                <p>
+                  <label for="apellido">Apellido</label>
+                  <input type="text" id="apellido" name="apellido"/>
+                </p>
+                <p>
+                  <label for="direccion">Dirección</label>
+                  <input type="text" id="direccion" name="direccion"/>
+                </p>
+                <p>
+                  <label for="localidad">Localidad</label>
+                  <input type="text" id="localidad" name="localidad"/>
+                </p>
+                <p>
+                  <label for="dni">DNI</label>
+                  <input type="text" id="dni" name="dni"/>
+                </p>
+                <p>
+                  <label for="fecha_nacimiento">Fecha de nacimiento</label>
+                  <input type="date" id="fecha_nacimiento" name="fecha_nacimiento"/>
+                </p>
+                <button>Ingresar</button>
+              </form>
+            </div>
           </div>
         </section>
       </section>

@@ -29,7 +29,7 @@ block content
           .gota
           .gota
     
-    section#registro
+    section#form_miembros
       .content
         .help
           .box.box-miembros.active
@@ -48,13 +48,56 @@ block content
 
               [Más información](http://www.inaes.com.ar) 
 
-        form(action="profile.html")
-          p
-            +formInput('text', 'nombre', 'Nombre de usuario')
-          p
-            +formInput('email', 'email', 'Correo electrónico')
-          p
-            +formInput('password', 'pass', 'Contraseña')
-          p
-            +formInput('password', 'repeat-pass', 'Repetir contraseña')
-          button(type=submit) Ingresar
+        .panel
+          table
+            thead
+              tr
+                th Socio
+                th Correo
+                th Estado
+            tbody
+              tr
+                td Ariel Federico Asus
+                td daniel@gmail.com
+                td 30%
+                td
+                  a(href="#editar")
+              tr
+                td Ariel Ramirez
+                td correo_un_poco_largo@gmail.com
+                td 60%
+                td
+                  a(href="#editar")
+              tr
+                td Jorge Ibañez
+                td jorge_ibanez@gmail.com
+                td 100%
+                td
+                  a(href="#editar")
+
+          form(action="profile.html")
+
+            h3 Nuevo socio
+
+            p
+              +formInput('text', 'nombre', 'Nombre de usuario')
+            p
+              +formInput('email', 'email', 'Correo electrónico')
+            p
+              +formInput('password', 'pass', 'Contraseña')
+            p
+              +formInput('password', 'repeat-pass', 'Repetir contraseña')
+            p
+              +formInput('text', 'nombre', 'Nombre')
+            p
+              +formInput('text', 'apellido', 'Apellido')
+            p
+              +formInput('text', 'direccion', 'Dirección')
+            p
+              +formInput('text', 'localidad', 'Localidad')
+            p
+              +formInput('text', 'dni', 'DNI')
+            p
+              +formInput('date', 'fecha_nacimiento', 'Fecha de nacimiento')
+
+            button(type=submit) Ingresar

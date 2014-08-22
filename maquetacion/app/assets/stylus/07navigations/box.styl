@@ -10,6 +10,7 @@
   margin: 30px auto
   
   h5,
+  h6,
   p
     text-align: left
     padding-left: 90px
@@ -126,18 +127,23 @@
 #profile
   .help
     .box
-      padding-top: 100px
-      margin: 0
-      &:before
-        left: auto
-        right: 0
-        top: 0;
+      +above(3)
+        padding-top: 100px
+        margin: 0
+        &:before
+          left: auto
+          right: 0
+          top: 0;
       float: none
       width: auto
-      h5
-        text-align: right
+      h5,
+      h6,
+      p
+        +above(3)
+          text-align: right
       h6
         font-size: 18px
-        text-align: right
       p
         font-size: 14px
+        +below(2)
+          padding-left: 0
