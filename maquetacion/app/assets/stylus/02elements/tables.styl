@@ -2,16 +2,24 @@ table()
   width: 100%
   color: #7a7676
   box-sizing border-box
+  margin-bottom: 20px
   td
     padding: 10px 15px
+    white-space: nowrap
+    border-bottom: 1px solid $colorInstitucional
+    &.mail
+      span
+        text-overflow: ellipsis
+        display: block
+        overflow: hidden
+        width: 100px
   th
-    padding: 15px
+    padding: 5px 15px
     background: #fff
-    border-bottom: 2px solid #ddd
-    font-weight: bold
+    border-bottom: 1px solid $colorInstitucionalAlt
+    font-weight: 600
     text-align: left
   tr
     background: #fff
-    border-bottom: 1px solid #ddd
   tr:nth-child(odd)
     background: #fbfbfb

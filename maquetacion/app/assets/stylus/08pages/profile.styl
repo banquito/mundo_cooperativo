@@ -2,3 +2,11 @@
   .content
     margin-bottom: 50px
     cf()
+    .col-2
+      p
+        column(1/2)
+
+    [href="#editar"]
+      font-size: 2em
+      &:before
+        mixIconSrc($icon-arrow-right-thick)

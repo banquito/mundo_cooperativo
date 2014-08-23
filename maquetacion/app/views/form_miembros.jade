@@ -52,25 +52,26 @@ block content
           table
             thead
               tr
-                th Socio
+                th Socios
                 th Correo
                 th Estado
+                th
             tbody
               tr
                 td Ariel Federico Asus
-                td daniel@gmail.com
+                td.mail: span daniel@gmail.com
                 td 30%
                 td
                   a(href="#editar")
               tr
                 td Ariel Ramirez
-                td correo_un_poco_largo@gmail.com
+                td.mail: span correo_un_pocoopuedesermuchomaslargoque_esto_largo@gmail.com
                 td 60%
                 td
                   a(href="#editar")
               tr
                 td Jorge Ibañez
-                td jorge_ibanez@gmail.com
+                td.mail: span jorge_ibanez@gmail.com
                 td 100%
                 td
                   a(href="#editar")
@@ -83,21 +84,25 @@ block content
               +formInput('text', 'nombre', 'Nombre de usuario')
             p
               +formInput('email', 'email', 'Correo electrónico')
-            p
-              +formInput('password', 'pass', 'Contraseña')
-            p
-              +formInput('password', 'repeat-pass', 'Repetir contraseña')
-            p
-              +formInput('text', 'nombre', 'Nombre')
-            p
-              +formInput('text', 'apellido', 'Apellido')
-            p
-              +formInput('text', 'direccion', 'Dirección')
-            p
-              +formInput('text', 'localidad', 'Localidad')
-            p
-              +formInput('text', 'dni', 'DNI')
-            p
-              +formInput('date', 'fecha_nacimiento', 'Fecha de nacimiento')
+            .col-2
+              p
+                +formInput('password', 'pass', 'Contraseña')
+              p
+                +formInput('password', 'repeat-pass', 'Repetir contraseña')
+            .col-2
+              p
+                +formInput('text', 'nombre', 'Nombre')
+              p
+                +formInput('text', 'apellido', 'Apellido')
+            .col-2
+              p
+                +formInput('text', 'direccion', 'Dirección')
+              p
+                +formInput('text', 'localidad', 'Localidad')
+            .col-2
+              p
+                +formInput('text', 'dni', 'DNI')
+              p
+                +formInput('date', 'fecha_nacimiento', 'Fecha de nacimiento')
 
-            button(type=submit) Ingresar
+            button(type=submit) Agregar socio
