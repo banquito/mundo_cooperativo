@@ -1,0 +1,29 @@
+extends _layouts/default
+
+block content
+  section#profile
+    include _layouts/includes/profile_top
+    
+    section#form_obhetivo
+      .content
+        .help
+          .box.box-objetivo.active
+            h5 Objetivo
+            h6 Objeto social
+            :markdown
+              El objeto social describe las áreas en las que
+              la cooperativa se va a desarrollar.
+              Puedes enumerar varias actividades en las que la 
+              cooperativa se va a desarrollar.
+
+              [Más información](http://www.inaes.com.ar) 
+
+        .panel
+
+          form(action="profile.html")
+
+            p
+              +formTextarea('objeto', 'Objeto social')
+            
+
+            button(type=submit) Guardar

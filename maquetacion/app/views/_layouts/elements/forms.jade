@@ -17,9 +17,10 @@ mixin formRadio(id, options)
     input(type="radio", id=id + '_' + option.value, name=id, value=option.value)
     label(for=id + '_' + option.value)= option.label
 
-mixin formCheckbox(id, label, value)
-  input(type="checkbox", id=id, name=id, value=value)
-  label(for=id)= label
+mixin formCheckbox(id, options)
+  - each option in options
+    input(type="checkbox", id=id + '_' + option.value, name=option.value, value=option.value)
+    label(for=id + '_' + option.value)= option.label
 
 mixin search_form(action, label)
   form(action=action).search-form

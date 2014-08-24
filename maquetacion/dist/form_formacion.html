@@ -82,42 +82,71 @@ que completes todos los pasos para una inscripción exitosa.</p>
             </div>
           </div>
         </div>
-        <div class="content">
-          <div class="boxes">
-            <div class="box box-miembros"><a href="form_miembros.html">
-                <h5>+6</h5>
-                <p>Para armar una cooperativa, se necestan al menos, 6 socios.</p></a></div>
-            <div class="box box-objetivo"><a href="form_objetivo.html">
-                <h5>Objetivo</h5>
-                <p>Estar de acuerdo en que tarea van a realizar.</p></a></div>
-            <div class="box box-lugar"><a href="form_lugar.html">
-                <h5>Lugar</h5>
-                <p>Tener una sede donde funcionar.</p></a></div>
-            <div class="box box-nombre active"><a href="form_nombre.html">
-                <h5>Nombre</h5>
-                <p>Nombre de uso comercial.</p></a></div>
-            <div class="box box-formacion"><a href="form_formacion.html">
+        <section id="form_formacion">
+          <div class="content">
+            <div class="help">
+              <div class="box box-formacion active">
                 <h5>Formación</h5>
-                <p>Curso de cooperativismo.</p></a></div>
-            <div class="box box-capital"><a href="form_capital.html">
-                <h5>Capital social</h5>
-                <p>Capital suscripto por socio.</p></a></div>
+                <h6>Curso de cooperativismo.</h6><p>Todos los miembros fundadores
+deben realizar el curso presencial.</p>
+<p>consulta las sedes y registra la 
+fecha de relización.</p>
+<p><a href="http://www.inaes.com.ar">Más información</a> </p>
+<p><a href="http://www.inaes.com.ar">Sedes</a> </p>
+
+              </div>
+            </div>
+            <div class="panel">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Socios</th>
+                    <th>Fecha del curso</th>
+                    <th>¿Asistió?</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Ariel Federico Asus</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Ariel Ramirez</td>
+                    <td>20.08.2014</td>
+                    <td>Si</td>
+                  </tr>
+                  <tr>
+                    <td>Jorge Ibañez</td>
+                    <td>20.08.2014</td>
+                    <td>No</td>
+                  </tr>
+                </tbody>
+              </table>
+              <form action="profile.html">
+                <h3>Invitación a curso</h3>
+                <p>
+                  <label for="fecha_asistencia">Fecha de asistencia</label>
+                  <input type="date" id="fecha_asistencia" name="fecha_asistencia"/>
+                </p>
+                <p>
+                  <label for="curso_sede">Sede</label>
+                  <input type="text" id="curso_sede" name="curso_sede"/>
+                </p>
+                <h4>Socios que deberán asistir</h4>
+                <p>
+                  <input type="checkbox" id="socios_curso_Ariel Federico Asus" name="Ariel Federico Asus" value="Ariel Federico Asus"/>
+                  <label for="socios_curso_Ariel Federico Asus">Ariel Federico Asus</label>
+                  <input type="checkbox" id="socios_curso_Ariel Ramirez" name="Ariel Ramirez" value="Ariel Ramirez"/>
+                  <label for="socios_curso_Ariel Ramirez">Ariel Ramirez</label>
+                  <input type="checkbox" id="socios_curso_Jorge Ibañez" name="Jorge Ibañez" value="Jorge Ibañez"/>
+                  <label for="socios_curso_Jorge Ibañez">Jorge Ibañez</label>
+                </p>
+                <button>Agregar socio</button>
+              </form>
+            </div>
           </div>
-          <div class="boxes-inaes">
-            <div class="box box-convocatoria"><a href="#">
-                <h5>Convocatoria  a Asamblea</h5>
-                <p>Genera la documantación necesaria para presentar ante el Inaes</p></a></div>
-            <div class="box box-asamblea"><a href="#">
-                <h5>Asamblea constitutiva</h5>
-                <p>Se crea el estatuto de la cooperativa</p></a></div>
-            <div class="box box-acta-consejo"><a href="#">
-                <h5>Primer acta del consejo</h5>
-                <p>Se repartin los cargos del consejo de administración</p></a></div>
-            <div class="box box-tramite"><a href="#">
-                <h5>Estado del tramite ante el Inaes</h5>
-                <p>Información sobre la situación legal de la cooperativa</p></a></div>
-          </div>
-        </div>
+        </section>
       </section>
       <footer>
         <h6>Las emrpesas cooperativas ayudan a construir un mundo mejor</h6>

@@ -1,0 +1,59 @@
+extends _layouts/default
+
+block content
+  section#profile
+    include _layouts/includes/profile_top
+    
+    section#form_formacion
+      .content
+        .help
+          .box.box-formacion.active
+            h5 Formación
+            h6 Curso de cooperativismo.
+            :markdown
+              Todos los miembros fundadores
+              deben realizar el curso presencial.
+
+              consulta las sedes y registra la 
+              fecha de relización.
+
+              [Más información](http://www.inaes.com.ar) 
+
+              [Sedes](http://www.inaes.com.ar) 
+
+        .panel
+          table
+            thead
+              tr
+                th Socios
+                th Fecha del curso
+                th ¿Asistió?
+            tbody
+              tr
+                td Ariel Federico Asus
+                td 
+                td 
+              tr
+                td Ariel Ramirez
+                td 20.08.2014
+                td Si
+              tr
+                td Jorge Ibañez
+                td 20.08.2014
+                td No
+
+          form(action="profile.html")
+
+            h3 Invitación a curso
+          
+            p
+              +formInput('date', 'fecha_asistencia', 'Fecha de asistencia')
+
+            p
+              +formInput('text', 'curso_sede', 'Sede')
+
+            h4 Socios que deberán asistir
+            p
+              +formCheckbox('socios_curso', global.socios)
+
+            button(type=submit) Agregar socio

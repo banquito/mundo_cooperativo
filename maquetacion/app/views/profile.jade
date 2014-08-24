@@ -2,32 +2,8 @@ extends _layouts/default
 
 block content
   section#profile
-    .content
-      .help
-        h2 Mi cooperativa
-        :markdown
-          Para completar la documentación 
-          solicitada por el **Inaes** debes
-          completar los siguientes módulos.
+    include _layouts/includes/profile_top
 
-      .karma
-        h3 Estado del trámite de inscripción
-        :markdown
-          El árbol del cooperativismo necesita ser regado.
-          Para lograr tener la matriculo de tu cooperativa, será necesario 
-          que completes todos los pasos para una inscripción exitosa.
-
-        .gotas
-          .gota.active
-          .gota.active
-          .gota.active
-          .gota
-          .gota
-          .gota
-          .gota
-          .gota
-          .gota
-          .gota
     .content
       .boxes
         .box.box-miembros
@@ -35,25 +11,25 @@ block content
             h5 +6
             p Para armar una cooperativa, se necestan al menos, 6 socios.
         .box.box-objetivo
-          a(href="#")
+          a(href="form_objetivo.html")
             h5 Objetivo
             p Estar de acuerdo en que tarea van a realizar.
         .box.box-lugar
-          a(href="#")
+          a(href="form_lugar.html")
             h5 Lugar
             p Tener una sede donde funcionar.
         .box.box-nombre.active
-          a(href="#")
+          a(href="form_nombre.html")
             h5 Nombre
-            p Para armar una cooperativa, se necestan al menos, 6 socios.
+            p Nombre de uso comercial.
         .box.box-formacion
-          a(href="#")
+          a(href="form_formacion.html")
             h5 Formación
-            p Estar de acuerdo en que tarea van a realizar.
+            p Curso de cooperativismo.
         .box.box-capital
-          a(href="#")
+          a(href="form_capital.html")
             h5 Capital social
-            p Tener una sede donde funcionar.
+            p Capital suscripto por socio.
 
       .boxes-inaes
         .box.box-convocatoria

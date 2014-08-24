@@ -1,0 +1,44 @@
+extends _layouts/default
+
+block content
+  section#profile
+    include _layouts/includes/profile_top
+    
+    section#form_capital
+      .content
+        .help
+          .box.box-capital.active
+            h5 Capital social
+            h6 Capital suscripto por socio
+            :markdown
+              Se debe realizar un depósito del 5% del salario 
+              mínimo por cada socio.
+
+              Esto se puede hacer en un banco cooperativo 
+              como el credicoop o en cualquier banco oficial. 
+
+
+              [Más información](http://www.inaes.com.ar) 
+
+              [Sucursales](http://www.inaes.com.ar) 
+
+        .panel
+
+          form(action="profile.html")
+
+            h3 Monto a depositár:
+              strong$354,35
+          
+            p
+              +formInput('date', 'fecha_deposito', 'Fecha de depótio')
+
+            p
+              +formInput('text', 'boleta', 'Número de boleta')
+
+            p
+              +formInput('text', 'banco', 'Banco')
+
+            p
+              +formInput('text', 'direccion_banco', 'Dirección')
+
+            button(type=submit) Guardar

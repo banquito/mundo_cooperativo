@@ -1,0 +1,33 @@
+extends _layouts/default
+
+block content
+  section#profile
+    include _layouts/includes/profile_top
+    
+    section#form_nombre
+      .content
+        .help
+          .box.box-nombre.active
+            h5 Nombre
+            h6 Nombre de uso comercial
+            :markdown
+              En su nombre, todas las cooperativas llevan el prefijo
+              "cooperativa de trabajo" y el sufijo  "limitada"
+
+              [Más información](http://www.inaes.com.ar) 
+
+        .panel
+
+
+          form(action="profile.html")
+
+            h3 Nombre comercial
+
+            p
+              "Cooperativa de trabajo"
+              input(type='text', id='nombre', name='nombre')
+              "limitada".
+            p
+              +formTextarea('descripcion', 'Descripción corta')
+
+            button(type=submit) Guardar

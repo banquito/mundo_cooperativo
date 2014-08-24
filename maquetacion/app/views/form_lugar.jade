@@ -1,0 +1,43 @@
+extends _layouts/default
+
+block content
+  section#profile
+    include _layouts/includes/profile_top
+    
+    section#form_lugar
+      .content
+        .help
+          .box.box-lugar.active
+            h5 Lugar
+            h6 Ubicación de la sede
+            :markdown
+              Esta es la dirección legal de la cooperativa.
+              Es recomendado que las asambleas y reuniones se realicen
+              en este lugar y es necesario poder certificar este domicilio.
+
+              [Más información](http://www.inaes.com.ar) 
+
+        .panel
+
+
+          form(action="profile.html")
+
+            h3 Datos de la sede
+
+            p
+              +formInput('text', 'direccion', 'Dirección')
+            .col-2
+              p
+                +formInput('text', 'piso', 'Piso')
+              p
+                +formInput('text', 'departamento', 'Departamento')
+            .col-2
+              p
+                +formInput('text', 'localidad', 'Localidad')
+              p
+                +formInput('text', 'provincia', 'Provincia')
+            .col-2
+              p
+                +formInput('text', 'codigo_postal', 'Código postal')
+
+            button(type=submit) Guardar

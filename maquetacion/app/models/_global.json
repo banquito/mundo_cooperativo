@@ -13,5 +13,10 @@
   },
   "page": {
     "title": "Mundo cooperativo"
-  }
+  },
+  "socios": [
+    {"label":"Ariel Federico Asus", "value":"Ariel Federico Asus"}, 
+    {"label":"Ariel Ramirez", "value":"Ariel Ramirez"}, 
+    {"label":"Jorge Ibañez", "value":"Jorge Ibañez"}
+  ]
 }
