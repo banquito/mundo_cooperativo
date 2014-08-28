@@ -93,6 +93,17 @@
   margin: 30px auto
   clear: both
   display: table
+  &.help
+    margin: 0 3% 0 0
+    .box.box-convocatoria,
+    .box.box-tramite
+      &:before
+        +above(3)
+          width: 80px
+          height: 80px
+          line-height: 80px
+          font-size: 50px
+
   h5
     color: $colorTramite
   .box
@@ -128,6 +139,7 @@
           top: -10px
           font-size: 80px
           line-height: 110px
+
 #profile
   .help
     .box
@@ -138,6 +150,9 @@
           left: auto
           right: 0
           top: 0;
+      +below(2)
+        &:before
+          top: -10px
       float: none
       width: auto
       h5,
@@ -146,7 +161,9 @@
         +above(3)
           text-align: right
       h6
-        font-size: 18px
+        font-size: 16px
+        +below(2)
+          min-height: 38px
       p
         font-size: 14px
         +below(2)
