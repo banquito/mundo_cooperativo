@@ -1,0 +1,62 @@
+extends _layouts/default
+
+block content
+  section#profile
+    include _layouts/includes/profile_top
+    
+    section#form_acta-consejo
+      .content
+        .help.boxes-inaes
+          .box.box-acta-consejo.active
+            h5 Primer acta del consejo
+            h6 Distribución de cargos
+            :markdown
+              En este mismo acto, se realiza la Asamblea
+              Constitutiva y el estatuto de la cooperadora.
+
+              Es necesario que se encuentren todos los socios.
+
+              Al finalizar la asamblea, se debe imprimir y firmar por 
+              todos los socios.
+
+
+              [Más información](http://www.inaes.com.ar) 
+
+
+        .panel
+
+          form(action="profile.html")
+
+            h3 01. Inicio de la reunión del consejo de administración
+          
+            p
+              +formInput('date', 'hora_inicio', 'Hora de inicio')
+            hr
+            h3 02. Elección de cargos
+
+            p Se deben distribuir los cargos
+            
+            h5 Presidente
+            p
+              +formCheckbox('socios_curso', global.socios)
+
+            h5 Secretario
+            p
+              +formCheckbox('socios_curso', global.socios)
+
+            h5 Tesorero
+            p
+              +formCheckbox('socios_curso', global.socios)
+
+            hr
+            h3 05. Finalización de la reunión del consejo de administración
+            
+            p
+              +formInput('date', 'hora_inicio', 'Hora de cierre')
+
+            button(type=submit) Finalizar
+            a(href="profile.html").volver volver
+
+
+            p
+              a(href="#").descargar Descargar acta

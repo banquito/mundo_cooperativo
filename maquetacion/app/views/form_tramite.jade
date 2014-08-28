@@ -1,0 +1,47 @@
+extends _layouts/default
+
+block content
+  section#profile
+    include _layouts/includes/profile_top
+    
+    section#form_tramite
+      .content
+        .help.boxes-inaes
+          .box.box-tramite.active
+            h5 Estado del trámite ante el Inaes
+            h6 Situación legal
+            :markdown
+              En este mismo acto, se realiza la Asamblea
+              Constitutiva y el estatuto de la cooperadora.
+
+              Es necesario que se encuentren todos los socios.
+
+              Al finalizar la asamblea, se debe imprimir y firmar por 
+              todos los socios.
+
+
+              [Más información](http://www.inaes.com.ar) 
+
+
+        .panel
+
+          form(action="profile.html")
+
+            h3 Documentación
+          
+            p
+              +formInput('date', 'mesa_entrada', 'Fecha de presentación por mesa de entrada')
+
+            p
+              +formInput('number', 'exp', 'Número de expediente')
+
+            p
+              +formInput('number', 'matricula', 'Número de matricula')
+
+            p
+              +formInput('number', 'cuit', 'CUIT')
+
+
+            button(type=submit) Guardar
+            a(href="profile.html").volver volver
+

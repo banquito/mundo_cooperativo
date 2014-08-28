@@ -1,0 +1,89 @@
+extends _layouts/default
+
+block content
+  section#profile
+    include _layouts/includes/profile_top
+    
+    section#form_asamblea
+      .content
+        .help.boxes-inaes
+          .box.box-asamblea.active
+            h5 Asamblea Constitutiva
+            h6 Creación del estatuto
+            :markdown
+              En este mismo acto, se realiza la Asamblea
+              Constitutiva y el estatuto de la cooperadora.
+
+              Es necesario que se encuentren todos los socios.
+
+              Al finalizar la asamblea, se debe imprimir y firmar por 
+              todos los socios.
+
+
+              [Más información](http://www.inaes.com.ar) 
+
+
+        .panel
+
+          form(action="profile.html")
+
+            h3 01. Inicio de asamblea interactiva
+          
+            p
+              +formInput('date', 'hora_inicio', 'Hora de inicio')
+            hr
+            h3 02. Elección de cargos para presidir la asamblea
+
+            p
+              +formCheckbox('socios_curso', global.socios)
+            p
+              | La elección de cargos, en esta instancia, es solo para presidir 
+              | la asamblea durante el funcionamiento de la misma.
+              | La elección de cargos para el consejo de administración se realizará
+              | durante la primer reunión del consejo de administración.
+            hr
+            h3 03. Lectura del estatuto
+
+            textarea
+              | ACTA CONSTITUTIVA DE LA COOPERATIVA DE TRABAJO(Consignar un nombre de fantasía)LIMITADA. - - - - -
+              | En (ciudad, pueblo) de (departamento, partido, etc. y provincia)
+              | siendo
+              | las (hora) horas del día (día) del mes de (mes) de (año), en el local de (sede donde se realiza la reunión) sito en la calle (calle y número) y como consecuencia de la promoción hecha anteriormente por los señores (nombre y apellido de los promotores), se reunieron, con el propósito de dejar constituida una cooperativa de trabajo, las personas que han firmado el libro de asistencia a las Asambleas
+              | (Solamente nombre y apellido de los asistentes al acto constitutivo. Al finalizar es conveniente insertar un salto de página, procediéndose, una vez impreso, a cerrar con una línea los espacios en blanco que quedaren.)
+              | La Resolución 324/94 contempla que este tipo de cooperativas puede constituirse con 6 (seis) asociados.
+              | Abrió el acto don (nombre y apellido de quien abre el acto) en nombre de los iniciadores, dándose lectura al Orden del Día a tratarse, y que es el siguiente: 1º) Elección de la Mesa Directiva de la Asamblea. 2º) Informe de los Iniciadores. 3º) Discusión y aprobación del estatuto. 4º) Suscripción e integración de cuotas sociales. 5º) Elección de los miembros titulares y suplentes del Consejo de Administración y de un Síndico titular y un Síndico suplente. Estos puntos fueron resueltos en la forma que se indica a continuación: 1º) ELECCION DE LA MESA DIRECTIVA DE LA ASAMBLEA: De inmediato por unanimidad los presentes designaron como Presidente y Secretario a los señores don (nombre y apellido del Presidente de la Asamblea) y don (nombre y apellido del Secretario de la Asamblea), respectivamente. 2º) INFORME DE LOS INICIADORES: En nombre de los iniciadores, don (nombre y apellido de quien realiza el informe oral) explicó el objeto de la reunión, poniendo de relieve la finalidad de la cooperativa proyectada, explicando los objetos, las bases y los métodos que son propios del sistema cooperativo y, en particular, de las entidades como la que se constituye por este acto, y los beneficios económicos, morales y culturales que ellas reportan. 3º) DISCUSION Y APROBACION DEL ESTATUTO: Terminada la exposición referida en el punto anterior, el Presidente invitó al Secretario a dar lectura del estatuto proyectado, el cual, una vez discutido, fue aprobado por unanimidad en general y en particular, en la forma que se inserta a continuación: - - - - - - - - - - - - - - - - - - - - - - -
+              | CAPITULO l. CONSTITUCION, DOMICILIO, DURACION Y OBJETO. ARTICULO 1º: Con la denominación de COOPERATIVA DE TRABAJO (Consignar un nombre de fantasía) LIMITADA, se constituye una cooperativa de trabajo que se regirá por las disposiciones del presenteestatuto, y en todo aquello que éste no previere, por la legislación vigente en materia de cooperativas. ARTICULO 2º: La Cooperativa tendrá su domicilio legal en (indicar con precisión la localidad, y en su caso, el Departamento o Partido y la Provincia en que la cooperativa tendrá su asiento legal.) (No se escribirá la calle y el número.).
+              | ARTICULO 3º: La duración de la Cooperativa es ilimitada. En caso de disolución su liquidación se hará con arreglo a lo establecido por este estatuto y la legislación cooperativa. ARTICULO 4º: La Cooperativa excluirá de todos sus actos las cuestiones políticas, religiosas, sindicales, de nacionalidad, regiones, o razas determinadas. ARTICULO 5º: La Cooperativa tendrá por objeto asumir por su propia cuenta, valiéndose del trabajo personal de sus asociados, las actividades inherentes a:
+            
+            hr
+            h3 04. Elección de cargos
+
+            p Se deben seleccionar los 3 miembros del consejo de administración y el sindico.
+            
+            h5 Elección de los miembros del Consejo de administración
+            p
+              +formCheckbox('socios_curso', global.socios)
+
+            h5 Elección del sindico titular
+            p
+              +formCheckbox('socios_curso', global.socios)
+
+            h5 Elección del sindico suplente
+            p
+              +formCheckbox('socios_curso', global.socios)
+
+            hr
+            h3 05. Finalización de la asamblea
+            
+            p
+              +formInput('date', 'hora_inicio', 'Hora de cierre')
+
+            button(type=submit) Finalizar
+            a(href="profile.html").volver volver
+
+            h4 Estatuto y acta constitutiva
+
+            p
+              a(href="#").descargar Descargar estatuto
+              br
+              | Imprimir en papel romaní o papel forense

@@ -82,15 +82,20 @@ que completes todos los pasos para una inscripción exitosa.</p>
             </div>
           </div>
         </div>
-        <section id="form_obhetivo">
+        <section id="form_convocatoria">
           <div class="content">
-            <div class="help">
-              <div class="box box-objetivo active">
-                <h5>Objetivo</h5>
-                <h6>Objeto social</h6><p>El objeto social describe las áreas en las que
-la cooperativa se va a desarrollar.
-Puedes enumerar varias actividades en las que la 
-cooperativa se va a desarrollar.</p>
+            <div class="help boxes-inaes">
+              <div class="box box-convocatoria active">
+                <h5>Convocatoria a Asamblea</h5>
+                <h6>Capital suscripto por socio</h6><p>La convocatoria debe ser 
+presentada ante el inaes 15 días
+antes de la realización de la asamblea</p>
+<p>Para recordar a los asociados de la realización de la 
+asamblea puede descargar estos afiches para imprimir 
+y pegar en lugares visibles. Al menos debe estar en la 
+sede de la cooperativa.</p>
+<p>Recuerda que se debe comunicar por todos los 
+medios posibles la realización de la asamblea.</p>
 <p><a href="http://www.inaes.com.ar">Más información</a> </p>
 
               </div>
@@ -98,10 +103,35 @@ cooperativa se va a desarrollar.</p>
             <div class="panel">
               <form action="profile.html">
                 <p>
-                  <label for="objeto">Objeto social</label>
-                  <textarea id="objeto" name="objeto"></textarea>
+                  <label for="fecha_asamblea">Fecha de asamblea</label>
+                  <input type="date" id="fecha_asamblea" name="fecha_asamblea"/>
+                </p>
+                <p>
+                  <label for="direccion">Dirección</label>
+                  <input type="text" id="direccion" name="direccion"/>
+                </p>
+                <p>
+                  <label for="banco">Banco</label>
+                  <input type="text" id="banco" name="banco"/>
+                </p>
+                <div class="col-2">
+                  <p>
+                    <label for="direccion">Dirección</label>
+                    <input type="text" id="direccion" name="direccion"/>
+                  </p>
+                  <p>
+                    <label for="localidad">Localidad</label>
+                    <input type="text" id="localidad" name="localidad"/>
+                  </p>
+                </div>
+                <p>
+                  <input type="checkbox" id="enviar_sendmail" name="sendmail" value="sendmail"/>
+                  <label for="enviar_sendmail">Enviar correo electrónico a todos los socios notificando de la realización de la asamblea</label>
                 </p>
                 <button>Guardar</button><a href="profile.html" class="volver">volver</a>
+                <h4>Documentación de la convocatoria</h4>
+                <p><a href="#" class="descargar">Descargar nota</a><br>Imprime la nota para presentar en Inaes.</p>
+                <p><a href="#" class="descargar">Descargar afiche</a><br>Pegálo en la cartelera y en lugares visibles.</p>
               </form>
             </div>
           </div>

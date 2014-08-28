@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Mundo cooperativo</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="jade, node, nodejs, stylus, lesscss, jadejs, framework, css, css3, html, html5">
+    <meta name="description">
+    <link href="assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <meta property="og:title" content="Mundo cooperativo">
+    <meta property="og:description">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="APP_URL">
+    <meta property="og:image" content="/assets/img/favicon.png">
+    <meta property="og:site_name" content="Mundo cooperativo">
+    <meta property="fb:admins" content="APP_ADMIN">
+    <script src="assets/js/lib/jquery-2.0.3.min.js" type="text/javascript"></script>
+    <script src="assets/js/lib/jquery.tools.min.js" type="text/javascript"></script>
+    <script src="assets/js/lib/jquery.flexslider.js" type="text/javascript"></script>
+    <script src="assets/js/script.js" type="text/javascript"></script>
+    <!--if lte IE8
+    script(src='assets/js/lib/html5.js')
+    
+    -->
+    <script>
+      var _gaq=[['_setAccount','UA-XXX'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+  </head>
+  <body id="sidemenu" class="loged-in">
+    <div class="sidemenu"><a href="#sidemenu"></a><a href="#sidemenuclose"></a>
+      <nav>
+        <aside class="user-box">
+          <h4>Daniel</h4>
+          <p>Administrador | <a href="index.html">Salir</a></p>
+        </aside>
+        <ul>
+          <li><a href="index.html">Mundo Cooperativo</a></li>
+          <li><a href="profile.html">Mi cooperativa</a></li>
+          <li><a href="#">Imagen institucional</a></li>
+          <li><a href="#">Aprender</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="page">
+      <header>
+        <h1><a href="index.html">Mundo cooperativo</a></h1>
+        <div class="profile">
+          Hola
+            <strong>Daniel Pérez </strong>,<a href="index.html">Salir </a>
+        </div>
+        <nav><a href="index.html">Mundo Cooperativo</a>|<a href="profile.html" class="active">Mi cooperativa</a>|<a href="#">Imagen institucional</a>|<a href="#">Aprender</a></nav>
+      </header>
+      <section id="profile">
+        <div class="content">
+          <div class="help">
+            <h2>Mi cooperativa</h2><p>Para completar la documentación 
+solicitada por el <strong>Inaes</strong> debes
+completar los siguientes módulos.</p>
+
+          </div>
+          <div class="karma">
+            <h3>Estado del trámite de inscripción</h3><p>El árbol del cooperativismo necesita ser regado.
+Para lograr tener la matriculo de tu cooperativa, será necesario 
+que completes todos los pasos para una inscripción exitosa.</p>
+
+            <div class="gotas">
+              <div class="gota active"></div>
+              <div class="gota active"></div>
+              <div class="gota active"></div>
+              <div class="gota"></div>
+              <div class="gota"></div>
+              <div class="gota"></div>
+              <div class="gota"></div>
+              <div class="gota"></div>
+              <div class="gota"></div>
+              <div class="gota"></div>
+            </div>
+          </div>
+        </div>
+        <section id="form_asamblea">
+          <div class="content">
+            <div class="help boxes-inaes">
+              <div class="box box-asamblea active">
+                <h5>Asamblea Constitutiva</h5>
+                <h6>Creación del estatuto</h6><p>En este mismo acto, se realiza la Asamblea
+Constitutiva y el estatuto de la cooperadora.</p>
+<p>Es necesario que se encuentren todos los socios.</p>
+<p>Al finalizar la asamblea, se debe imprimir y firmar por 
+todos los socios.</p>
+<p><a href="http://www.inaes.com.ar">Más información</a> </p>
+
+              </div>
+            </div>
+            <div class="panel">
+              <form action="profile.html">
+                <h3>01. Inicio de asamblea interactiva</h3>
+                <p>
+                  <label for="hora_inicio">Hora de inicio</label>
+                  <input type="date" id="hora_inicio" name="hora_inicio"/>
+                </p>
+                <hr>
+                <h3>02. Elección de cargos para presidir la asamblea</h3>
+                <p>
+                  <input type="checkbox" id="socios_curso_Ariel Federico Asus" name="Ariel Federico Asus" value="Ariel Federico Asus"/>
+                  <label for="socios_curso_Ariel Federico Asus">Ariel Federico Asus</label>
+                  <input type="checkbox" id="socios_curso_Ariel Ramirez" name="Ariel Ramirez" value="Ariel Ramirez"/>
+                  <label for="socios_curso_Ariel Ramirez">Ariel Ramirez</label>
+                  <input type="checkbox" id="socios_curso_Jorge Ibañez" name="Jorge Ibañez" value="Jorge Ibañez"/>
+                  <label for="socios_curso_Jorge Ibañez">Jorge Ibañez</label>
+                </p>
+                <p>
+                  La elección de cargos, en esta instancia, es solo para presidir 
+                  la asamblea durante el funcionamiento de la misma.
+                  La elección de cargos para el consejo de administración se realizará
+                  durante la primer reunión del consejo de administración.
+                </p>
+                <hr>
+                <h3>03. Lectura del estatuto</h3>
+                <textarea>
+                  ACTA CONSTITUTIVA DE LA COOPERATIVA DE TRABAJO(Consignar un nombre de fantasía)LIMITADA. - - - - -
+                  En (ciudad, pueblo) de (departamento, partido, etc. y provincia)
+                  siendo
+                  las (hora) horas del día (día) del mes de (mes) de (año), en el local de (sede donde se realiza la reunión) sito en la calle (calle y número) y como consecuencia de la promoción hecha anteriormente por los señores (nombre y apellido de los promotores), se reunieron, con el propósito de dejar constituida una cooperativa de trabajo, las personas que han firmado el libro de asistencia a las Asambleas
+                  (Solamente nombre y apellido de los asistentes al acto constitutivo. Al finalizar es conveniente insertar un salto de página, procediéndose, una vez impreso, a cerrar con una línea los espacios en blanco que quedaren.)
+                  La Resolución 324/94 contempla que este tipo de cooperativas puede constituirse con 6 (seis) asociados.
+                  Abrió el acto don (nombre y apellido de quien abre el acto) en nombre de los iniciadores, dándose lectura al Orden del Día a tratarse, y que es el siguiente: 1º) Elección de la Mesa Directiva de la Asamblea. 2º) Informe de los Iniciadores. 3º) Discusión y aprobación del estatuto. 4º) Suscripción e integración de cuotas sociales. 5º) Elección de los miembros titulares y suplentes del Consejo de Administración y de un Síndico titular y un Síndico suplente. Estos puntos fueron resueltos en la forma que se indica a continuación: 1º) ELECCION DE LA MESA DIRECTIVA DE LA ASAMBLEA: De inmediato por unanimidad los presentes designaron como Presidente y Secretario a los señores don (nombre y apellido del Presidente de la Asamblea) y don (nombre y apellido del Secretario de la Asamblea), respectivamente. 2º) INFORME DE LOS INICIADORES: En nombre de los iniciadores, don (nombre y apellido de quien realiza el informe oral) explicó el objeto de la reunión, poniendo de relieve la finalidad de la cooperativa proyectada, explicando los objetos, las bases y los métodos que son propios del sistema cooperativo y, en particular, de las entidades como la que se constituye por este acto, y los beneficios económicos, morales y culturales que ellas reportan. 3º) DISCUSION Y APROBACION DEL ESTATUTO: Terminada la exposición referida en el punto anterior, el Presidente invitó al Secretario a dar lectura del estatuto proyectado, el cual, una vez discutido, fue aprobado por unanimidad en general y en particular, en la forma que se inserta a continuación: - - - - - - - - - - - - - - - - - - - - - - -
+                  CAPITULO l. CONSTITUCION, DOMICILIO, DURACION Y OBJETO. ARTICULO 1º: Con la denominación de COOPERATIVA DE TRABAJO (Consignar un nombre de fantasía) LIMITADA, se constituye una cooperativa de trabajo que se regirá por las disposiciones del presenteestatuto, y en todo aquello que éste no previere, por la legislación vigente en materia de cooperativas. ARTICULO 2º: La Cooperativa tendrá su domicilio legal en (indicar con precisión la localidad, y en su caso, el Departamento o Partido y la Provincia en que la cooperativa tendrá su asiento legal.) (No se escribirá la calle y el número.).
+                  ARTICULO 3º: La duración de la Cooperativa es ilimitada. En caso de disolución su liquidación se hará con arreglo a lo establecido por este estatuto y la legislación cooperativa. ARTICULO 4º: La Cooperativa excluirá de todos sus actos las cuestiones políticas, religiosas, sindicales, de nacionalidad, regiones, o razas determinadas. ARTICULO 5º: La Cooperativa tendrá por objeto asumir por su propia cuenta, valiéndose del trabajo personal de sus asociados, las actividades inherentes a:
+                </textarea>
+                <hr>
+                <h3>04. Elección de cargos</h3>
+                <p>Se deben seleccionar los 3 miembros del consejo de administración y el sindico.</p>
+                <h5>Elección de los miembros del Consejo de administración</h5>
+                <p>
+                  <input type="checkbox" id="socios_curso_Ariel Federico Asus" name="Ariel Federico Asus" value="Ariel Federico Asus"/>
+                  <label for="socios_curso_Ariel Federico Asus">Ariel Federico Asus</label>
+                  <input type="checkbox" id="socios_curso_Ariel Ramirez" name="Ariel Ramirez" value="Ariel Ramirez"/>
+                  <label for="socios_curso_Ariel Ramirez">Ariel Ramirez</label>
+                  <input type="checkbox" id="socios_curso_Jorge Ibañez" name="Jorge Ibañez" value="Jorge Ibañez"/>
+                  <label for="socios_curso_Jorge Ibañez">Jorge Ibañez</label>
+                </p>
+                <h5>Elección del sindico titular</h5>
+                <p>
+                  <input type="checkbox" id="socios_curso_Ariel Federico Asus" name="Ariel Federico Asus" value="Ariel Federico Asus"/>
+                  <label for="socios_curso_Ariel Federico Asus">Ariel Federico Asus</label>
+                  <input type="checkbox" id="socios_curso_Ariel Ramirez" name="Ariel Ramirez" value="Ariel Ramirez"/>
+                  <label for="socios_curso_Ariel Ramirez">Ariel Ramirez</label>
+                  <input type="checkbox" id="socios_curso_Jorge Ibañez" name="Jorge Ibañez" value="Jorge Ibañez"/>
+                  <label for="socios_curso_Jorge Ibañez">Jorge Ibañez</label>
+                </p>
+                <h5>Elección del sindico suplente</h5>
+                <p>
+                  <input type="checkbox" id="socios_curso_Ariel Federico Asus" name="Ariel Federico Asus" value="Ariel Federico Asus"/>
+                  <label for="socios_curso_Ariel Federico Asus">Ariel Federico Asus</label>
+                  <input type="checkbox" id="socios_curso_Ariel Ramirez" name="Ariel Ramirez" value="Ariel Ramirez"/>
+                  <label for="socios_curso_Ariel Ramirez">Ariel Ramirez</label>
+                  <input type="checkbox" id="socios_curso_Jorge Ibañez" name="Jorge Ibañez" value="Jorge Ibañez"/>
+                  <label for="socios_curso_Jorge Ibañez">Jorge Ibañez</label>
+                </p>
+                <hr>
+                <h3>05. Finalización de la asamblea</h3>
+                <p>
+                  <label for="hora_inicio">Hora de cierre</label>
+                  <input type="date" id="hora_inicio" name="hora_inicio"/>
+                </p>
+                <button>Finalizar</button><a href="profile.html" class="volver">volver</a>
+                <h4>Estatuto y acta constitutiva</h4>
+                <p><a href="#" class="descargar">Descargar estatuto</a><br>Imprimir en papel romaní o papel forense</p>
+              </form>
+            </div>
+          </div>
+        </section>
+      </section>
+      <footer>
+        <h6>Las emrpesas cooperativas ayudan a construir un mundo mejor</h6>
+      </footer>
+    </div>
+  </body>
+</html>

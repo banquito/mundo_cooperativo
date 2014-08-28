@@ -1,0 +1,63 @@
+extends _layouts/default
+
+block content
+  section#profile
+    include _layouts/includes/profile_top
+    
+    section#form_convocatoria
+      .content
+        .help.boxes-inaes
+          .box.box-convocatoria.active
+            h5 Convocatoria a Asamblea
+            h6 Capital suscripto por socio
+            :markdown
+              La convocatoria debe ser 
+              presentada ante el inaes 15 días
+              antes de la realización de la asamblea
+
+              Para recordar a los asociados de la realización de la 
+              asamblea puede descargar estos afiches para imprimir 
+              y pegar en lugares visibles. Al menos debe estar en la 
+              sede de la cooperativa.
+
+              Recuerda que se debe comunicar por todos los 
+              medios posibles la realización de la asamblea.
+
+              [Más información](http://www.inaes.com.ar) 
+
+        .panel
+
+          form(action="profile.html")
+
+            p
+              +formInput('date', 'fecha_asamblea', 'Fecha de asamblea')
+
+            p
+              +formInput('text', 'direccion', 'Dirección')
+
+            p
+              +formInput('text', 'banco', 'Banco')
+
+            .col-2
+              p
+                +formInput('text', 'direccion', 'Dirección')
+              p
+                +formInput('text', 'localidad', 'Localidad')
+
+            p
+              +formCheckbox('enviar',[{label:'Enviar correo electrónico a todos los socios notificando de la realización de la asamblea', value:'sendmail'}])
+
+            button(type=submit) Guardar
+            a(href="profile.html").volver volver
+
+            h4 Documentación de la convocatoria
+
+            p
+              a(href="#").descargar Descargar nota
+              br
+              | Imprime la nota para presentar en Inaes.
+
+            p
+              a(href="#").descargar Descargar afiche
+              br
+              | Pegálo en la cartelera y en lugares visibles.

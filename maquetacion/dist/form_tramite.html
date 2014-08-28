@@ -82,24 +82,38 @@ que completes todos los pasos para una inscripción exitosa.</p>
             </div>
           </div>
         </div>
-        <section id="form_obhetivo">
+        <section id="form_tramite">
           <div class="content">
-            <div class="help">
-              <div class="box box-objetivo active">
-                <h5>Objetivo</h5>
-                <h6>Objeto social</h6><p>El objeto social describe las áreas en las que
-la cooperativa se va a desarrollar.
-Puedes enumerar varias actividades en las que la 
-cooperativa se va a desarrollar.</p>
+            <div class="help boxes-inaes">
+              <div class="box box-tramite active">
+                <h5>Estado del trámite ante el Inaes</h5>
+                <h6>Situación legal</h6><p>En este mismo acto, se realiza la Asamblea
+Constitutiva y el estatuto de la cooperadora.</p>
+<p>Es necesario que se encuentren todos los socios.</p>
+<p>Al finalizar la asamblea, se debe imprimir y firmar por 
+todos los socios.</p>
 <p><a href="http://www.inaes.com.ar">Más información</a> </p>
 
               </div>
             </div>
             <div class="panel">
               <form action="profile.html">
+                <h3>Documentación</h3>
                 <p>
-                  <label for="objeto">Objeto social</label>
-                  <textarea id="objeto" name="objeto"></textarea>
+                  <label for="mesa_entrada">Fecha de presentación por mesa de entrada</label>
+                  <input type="date" id="mesa_entrada" name="mesa_entrada"/>
+                </p>
+                <p>
+                  <label for="exp">Número de expediente</label>
+                  <input type="number" id="exp" name="exp"/>
+                </p>
+                <p>
+                  <label for="matricula">Número de matricula</label>
+                  <input type="number" id="matricula" name="matricula"/>
+                </p>
+                <p>
+                  <label for="cuit">CUIT</label>
+                  <input type="number" id="cuit" name="cuit"/>
                 </p>
                 <button>Guardar</button><a href="profile.html" class="volver">volver</a>
               </form>
