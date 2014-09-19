@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'south',
     'coop',
+    'organos_locales',
 )
 
 MIDDLEWARE_CLASSES = (
