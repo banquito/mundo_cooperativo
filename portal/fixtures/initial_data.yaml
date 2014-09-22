@@ -1,0 +1,337 @@
+- model: organos_locales.Organization
+  pk: 1
+  fields:
+    nombre: Secretaría de Participación Ciudadana- Subsecretaría de Acción Cooperativa
+    siglas: SPCy AC Buenos Aires
+    domicilio: Calle 51 Nº 735
+    codigo_postal: 1900
+    ciudad: La Plata
+    provincia: Buenos Aires
+    prefijo: 0221
+    telefonos: 4254899
+    fax: 
+    correo_electronico: accioncooperativa@spc.gba.gov.ar
+    director: Sr. Luciano Javier Ruiz
+    director2: Sr. Federico UGO
+  pk: 2
+  fields:
+    nombre: Dirección Provincial de Acción Cooperativa y Mutual
+    siglas: DPACyEI Catamarca
+    domicilio: Sarmiento 727 - Piso 6
+    codigo_postal: 4700
+    ciudad: San Fernando del Valle de Catamarca
+    provincia: Catamarca
+    prefijo: 0383
+    telefonos: 4437589
+    fax: 
+    correo_electronico: dircoopmutcatamarca@gmail.com
+    director: Dr. Juan I. Rosales
+    director2: Sra. Maria Elena Zalazar (Fiscalización)
+  pk: 3
+  fields:
+    nombre: Dirección de Cooperativas y Mutuales
+    siglas: DCyM Chaco
+    domicilio: Marcelo T. de Alvear 145 – 7° PISO
+    codigo_postal: 3500
+    ciudad: Resistencia
+    provincia: Chaco
+    prefijo: 0362
+    telefonos: 4448081
+    fax: 
+    correo_electronico: minprod.dircoop@ecomchaco.com.ar
+    director: Lic. José Bernardo Benolol
+    director2:
+  pk: 4
+  fields:
+    nombre: Subsecretaría de Asociativismo y Economía Social
+    siglas: SAyES Chubut
+    domicilio: Pasaje Garzón 17 Esq. M. Moreno
+    codigo_postal: U9103
+    ciudad: Rawson
+    provincia: Chubut
+    prefijo: 0280
+    telefonos: 4483606
+    fax: 4481511
+    correo_electronico: 
+    director: Lic. Mario E. MONTIEL
+    director2: Dtor Fiscalización: Dr. Eric SARRIES
+  pk: 5
+  fields:
+    nombre: 'Secretaría de Políticas Sociales, Cooperativas y Mutuales'
+    siglas: SPSCyM Córdoba
+    domicilio: Complejo Pablo Pizurno -Av. Vélez Sarsfield Nº 2311
+    codigo_postal: 5000
+    ciudad: Córdoba
+    provincia: Córdoba
+    prefijo: 0351
+    telefonos: 4343108/09 Conmutador: 4688500
+    fax: 4688547
+    correo_electronico: sergio.lorenzatti@cba.gov.ar
+    director: Dr. Sergio LORENZATTI
+    director2:
+  pk: 6
+  fields:
+    nombre: Dirección de Cooperativas
+    siglas: DCC - Corrientes
+    domicilio: Perú 1186
+    codigo_postal: 3400
+    ciudad: Corrientes
+    provincia: Corrientes
+    prefijo: 0379
+    telefonos: 4431360/4476041
+    fax: 4431360
+    correo_electronico: dircoopctes@yahoo.com.ar
+    director: Sr. Manuel María BOGARIN
+    director2:
+  pk: 7
+  fields:
+    nombre: Instituto de Promoción de Cooperativas y Mutualidades
+    siglas: IPCyM Entre Ríos
+    domicilio: Gualeguaychú 255
+    codigo_postal: 3100
+    ciudad: Paraná
+    provincia: Entre Ríos
+    prefijo: 0343
+    telefonos: 4207885
+    fax: 4207884
+    correo_electronico: olentrerios@inaes.gov.ar ipcymer@entrerios.gov.ar
+    director: Dr. Ricardo Francisco ETCHEMENDY
+    director2:
+  pk: 8
+  fields:
+    nombre: Subsecretaría de Economía Social
+    siglas: SES Formosa
+    domicilio: Pringles 110
+    codigo_postal: 3600
+    ciudad: Formosa
+    provincia: Formosa
+    prefijo: 0370
+    telefonos: 4430293/204
+    fax: 4430293
+    correo_electronico: dcm@formosa.gov.ar
+    director: CPN Ricardo FISCHER
+    director2: Dra. Silvana DORREGO
+  pk: 9
+  fields:
+    nombre: Dirección General de Desarrollo Industrial y Comercial
+    siglas: DGDI yC Jujuy
+    domicilio: Juana Manuela Gorriti 851 - 1° Piso
+    codigo_postal: 4600
+    ciudad: San Salvador de Jujuy
+    provincia: Jujuy
+    prefijo: 0388
+    telefonos: 4242052
+    fax: 4430293
+    correo_electronico: olcjujujy-@hotmail.com oljujuy@inaes.gov.ar direcciondeindustriajujuy@gmail.com
+    director: Ing. Sergio Guillermo ARAMAYO
+    director2: Sr. Jimmy Joel Maidana (Departamento Cooperativas)
+  pk: 10
+  fields:
+    nombre: Subsecretaría de Cooperativas y Mutuales
+    siglas: SCyM La Pampa
+    domicilio: Centro Cívico P.B.
+    codigo_postal: 6300
+    ciudad: Santa Rosa
+    provincia: La Pampa
+    prefijo: 02954
+    telefonos: 436954
+    fax: 452701/452600 int: 1298/1777
+    correo_electronico: scooperativas@lapampa.gov.ar
+    director: Dr. Claudio MARRON
+    director2: CPN. Graciela ZAPATA
+  pk: 11
+  fields:
+    nombre: Dirección General de Economía Social
+    siglas: DGES La Rioja
+    domicilio: Centro Adminstrativo Avda Ortiz de Ocampo 1700 y Laprida
+    codigo_postal: 5300
+    ciudad: La Rioja
+    provincia: La Rioja
+    prefijo: 0380
+    telefonos: 4453730
+    fax: 4453730
+    correo_electronico: dges@larioja.gov.ar
+    director: CPN. Jorge Rolando LAVAQUE
+    director2: Sr. Ruben OLIVA (Cooperativas)
+  pk: 12
+  fields:
+    nombre: Subsecretaria de Asociativismo y Cooperativas
+    siglas: SAyC Mendoza
+    domicilio: Av. San Martín 1027 1º piso (Galeria Piazza)
+    codigo_postal: 5500
+    ciudad: Mendoza
+    provincia: Mendoza
+    prefijo: 0261
+    telefonos: 4235522/30/34
+    fax: 4235522
+    correo_electronico: fmoyano@mendoza.gov.ar
+    director: Prof. Tatiana C. MUSSATO
+    director2: 
+  pk: 13
+  fields:
+    nombre: 'Ministerio de Acción Cooperativa , Mutual, Comercio e Integración'
+    siglas: MACMCeI Misiones
+    domicilio: Av. Mitre 2180
+    codigo_postal: 3300
+    ciudad: Posadas
+    provincia: Misiones
+    prefijo: 0376
+    telefonos: 4447912/13/7609
+    fax: 4447199
+    correo_electronico: ministrocooperativas@yahoo.com.ar ministrocooperativas@arnetbiz.com.ar
+    director: Dra. Lia Fabiola BIANCO
+    director2: CPN Miguel Angel PERONI (Subsecretario de Accion Cooperativa y Mutual)
+  pk: 14
+  fields:
+    nombre: Dirección Provincial de Personas Jurídicas
+    siglas: DPPJ Neuquén
+    domicilio: Carlos H. Rodríguez Nº 139- P.B
+    codigo_postal: 8300
+    ciudad: Neuquén
+    provincia: Neuquén
+    prefijo: 0299
+    telefonos: 4495441/4494697
+    fax:
+    correo_electronico: coopmut_direcciongeneral@neuquen.gov.ar
+    director: CPN Juan José PRIETO
+    director2: Dr. Guillermo César IBAÑEZ
+  pk: 15
+  fields:
+    nombre: Dirección de Cooperativas y Mutuales
+    siglas: DCyM Río Negro
+    domicilio: Av. 25 de mayo Nº 571
+    codigo_postal: 8500
+    ciudad: Viedma
+    provincia: Río Negro
+    prefijo: 02920
+    telefonos: 427981
+    fax: 427981
+    correo_electronico: asesoria@economiasocial.gov.ar administración@economiasocial.gov.ar capacitacion@economiasocial.gov.ar mutuales@economiasocial.gov.ar fiscoop@economiasocial.gov.ar
+    director: Sr. Eric Norberto FERRONI
+    director2:
+  pk: 16
+  fields:
+    nombre: Dirección General de Cooperativas y Mutuales
+    siglas: DCyM Salta
+    domicilio: Pedernera 273
+    codigo_postal: 4400
+    ciudad: Viedma
+    provincia: Salta
+    prefijo: 0387
+    telefonos: 4310708/4315713/4329395 int: 18 y 19
+    fax:
+    correo_electronico: jbarazzutti@salta.gov.ar
+    director: M.V. Jorge BARAZZUTTI
+    director2:
+  pk: 17
+  fields:
+    nombre: Dirección provincial de Cooperativas
+    siglas: DPC San Juan
+    domicilio: Centro Cívico Nestor Kirchner - España 50 Sur -1º Piso Nucleo 2
+    codigo_postal: 5400
+    ciudad: San Juan
+    provincia: San Juan
+    prefijo: 0264
+    telefonos: 4306095
+    fax: 4306032
+    correo_electronico:
+    director: MG.Marisol RABITI
+    director2:
+  pk: 18
+  fields:
+    nombre: 'Dirección de Constitución y Fiscalización de Personas Jurídicas, Cooperativas y Mutuales'
+    siglas: DCFPJCyM San Luis
+    domicilio: Ayacucho 945 of. 179 - 6ªPiso Edificio Administrativo
+    codigo_postal: 5700
+    ciudad: San Luis
+    provincia: San Luis
+    prefijo: 0266
+    telefonos: 4451159/4451167/4451454 
+    fax: 4451167
+    correo_electronico: personasjuridicas@sanluis.gov.ar marialdominguez@sanluis.gov.ar gbertolini@sanluis.gov.ar
+    director: Dra. Maria Lorena DOMINGUEZ
+    director2: Sr. Gustavo A. BERTOLINI
+  pk: 19
+  fields:
+    nombre: Dirección General de Cooperativas y Mutuales de la Prov. de Santa Cruz
+    siglas: DGCyM Sta. Cruz
+    domicilio: Ramón y Cajal Nº 555
+    codigo_postal: 9400
+    ciudad: Río Gallegos
+    provincia: Santa Cruz
+    prefijo: 02966
+    telefonos: 444703
+    fax: 
+    correo_electronico: dir_coopymut@santacruz.gov.ar
+    director: Sr. Juan Carlos LAZARTE
+    director2:
+  pk: 20
+  fields:
+    nombre: Subsecretaría de Asociativismo Promoción de la Empresarialidad y Trabajo Decente
+    siglas: SAPEyTD Santa Fe
+    domicilio: Boulevar Pellegrini 3100
+    codigo_postal: 3000
+    ciudad: Santa Fe
+    provincia: Santa Fe
+    prefijo: 0342
+    telefonos: 4505394/4505300 int. 4101
+    fax: 
+    correo_electronico: alfredoluiscecchi@gmail.com
+    director: Lic. Alfredo Luis CECCHI
+    director2:
+  pk: 21
+  fields:
+    nombre: Instituto Provincial de Acción Cooperativa
+    siglas: IPAC Stgo. del Estero
+    domicilio: Libertad 725
+    codigo_postal: 4200
+    ciudad: Santiago del Estero
+    provincia: Santiago del Estero
+    prefijo: 0385
+    telefonos: 4211852
+    fax: 4211852
+    correo_electronico: oapeiretti@gmail.com lumensantiago@hotmail.com
+    director: Lic. Osvaldo Alejandro PEIRETTI
+    director2: Prof. Juan Domingo MARTINEZ (Mutuales)
+  pk: 22
+  fields:
+    nombre: Inspección General de Justicia (Fiscalización y Registro)
+    siglas: IGJ Tierra del Fuego
+    domicilio: Barrio 60 Viviendas - Tira I, Casa 5
+    codigo_postal: 9410
+    ciudad: Usuhaia
+    provincia: Tierra del Fuego
+    prefijo: 02901
+    telefonos: 423019
+    fax: 
+    correo_electronico: cooperativas01@hotmail.com cooperativas02@hotmail.com
+    director: Dra. Bettiana COBAS
+    director2:
+  pk: 23
+  fields:
+    nombre: IPACyM Tucumán
+    siglas: IPACyM Tucumán
+    domicilio: Rivadavia 235
+    codigo_postal: 4000
+    ciudad: San Miguel de Tucumán
+    provincia: Tucumán
+    prefijo: 0381
+    telefonos: 4302315/4214168
+    fax: 
+    correo_electronico:
+    director: Dr. David Fernando Mizrahi
+    director2: Dra. Eleonora Rodriguez Campos
+  pk: 24
+  fields:
+    nombre: Instituto Nacional de Asociativismo y Economía Social
+    siglas: INAES
+    domicilio: Av.Belgrano 1656
+    codigo_postal: C1093AAR
+    ciudad: Ciudad autónoma de Buenos Aires
+    provincia: Capital Federal
+    prefijo: 011
+    telefonos: 43834444
+    fax: 
+    correo_electronico:
+    director: Dr. Patricio Griffin
+    director2: Dra. Eleonora Rodriguez Campos
